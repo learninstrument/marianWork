@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAIRLINE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #D2691E;
+            --background-color: #FFF5EE;
+            --text-color: #4A4A4A;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .navbar {
+            background-color: transparent;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        .hero-section {
+            background-color: var(--background-color);
+            padding: 100px 0;
+        }
+        .service-card, .team-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .service-card:hover, .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .booking-section {
+            background-color: #FFF;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .product-card {
+            border: none;
+            background-color: var(--background-color);
+        }
+        .why-choose-us {
+            background-color: var(--primary-color);
+            color: #FFF;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="HairImages/logo.jpg" class="w-25 d-block img-fluid" width="5px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">AboutUs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+                <button class="btn btn-primary ms-3">ContactUs</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Get the Hair You Deserve</h1>
+                    <p class="lead">Discover our wide range of high-quality hair extensions, wigs, and hair pieces.
+                         Our hair is sourced from the best suppliers to ensure you get the best look and feel.</p>
+                    <button class="btn btn-primary btn-lg">Shop Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="HairImages/charming.jpg" alt="Beautiful hairstyle" class="img-fluid w-75 rounded">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="HairImages/IMG_3772.PNG" alt="New product" class="me-3 w-25 img-fluid">
+                            <div>
+                                <h5 class="card-title">New Hair Arrivals</h5>
+                                <p class="card-text">New Hair Styles Added Weekly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="HairImages/IMG_3769.PNG" alt="Discount" class="me-3 w-25 img-fluid">
+                            <div>
+                                <h5 class="card-title">Hair Sale</h5>
+                                <p class="card-text">Up to 50% Off on Select Hair Styles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hair Types</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="HairImages/IMG_3772.PNG" class="card-img-top" alt="Bonestaright">
+                        <div class="card-body">
+                            <h5 class="card-title">Bonestaright</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="HairImages/IMG_3769.PNG" class="card-img-top" alt="Bouncy curls">
+                        <div class="card-body">
+                            <h5 class="card-title">Bouncy curls</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="/HairImages/IMG_3768.PNG" class="card-img-top" alt="pixie curls">
+                        <div class="card-body">
+                            <h5 class="card-title">pixie curls</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="HairImages/offices.jpg" alt="Booking" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <div class="booking-section">
+                        <h2 class="mb-4">Order Now</h2>
+                        <p>Ready for a new look? Shop our hair collection today and get the style you've always wanted!</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Your Phone">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option selected>Hair type</option>
+                                    <option>Length</option>
+                                    <option>Color</option>
+                                    <option>Quantity</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                        <h5 class="mt-4">Working Hours</h5>
+                        <ul class="list-unstyled">
+                            <li>Monday-Friday: 9:00 - 20:00</li>
+                            <li>Saturday: 10:00 - 18:00</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hair Collection</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="HairImages/IMG_3769.PNG" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bouncy curls</h5>
+                            <p class="card-text">$39</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="HairImages/IMG_3768.PNG" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">pixie curls</h5>
+                            <p class="card-text">$50</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="HairImages/IMG_3772.PNG" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bonestaright</h5>
+                            <p class="card-text">$70</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-primary">Open Store</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h5>High-Quality Hair</h5>
+                        <p>We source our hair from the best suppliers to ensure you get
+                             the highest quality hair that looks and feels great.</p>
+                    </div>
+                </div>
+                <!-- Repeat for other reasons -->
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h5>Competitive Pricing</h5>
+                        <p>We offer competitive pricing without compromising on quality, so you can get the hair you want
+                             without breaking the bank.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h5>Fast Shipping</h5>
+                        <p>We know you can't wait to get your new hair, so we offer fast shipping options to get your 
+                            order to you quickly.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h5>Authenticity Guarantee</h5>
+                        <p> We guarantee the authenticity of our hair, so you 
+                            can trust you're getting 100% human hair or high-quality synthetic hair.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h3>30k+</h3>
+                <p>Satisfied clients</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Team</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="HairImages/sonia.JPG" class="card-img-top  img-fluid" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title">sonia odafen</h5>
+                            <p class="card-text">Hair Stylist</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other team members -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HAIRLINE</h5>
+                   
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Abuja, Nigeria</p>
+                    <p>Email: info@hairline.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe to our newsletter</h5>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; HAIRLINE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
